@@ -51,7 +51,6 @@ export default function ResumeUpload({ onProfileComplete }) {
 
       const res = await api.post("/api/parse-resume", formData, {
         headers: { "Content-Type": "multipart/form-data" },
-        timeout: 30000,
       });
 
       toast.dismiss();
